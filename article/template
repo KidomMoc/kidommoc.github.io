@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" href="../style.css" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<main>
+		<h1></h1>
+		<p><small></small></p>
+		<article>
+		</article>
+		<hr />
+		<footer>
+			<p><small><a href="../index.html">Home</a> | <a href="http://github/kidommoc/">Github</a></small></p>
+			<p><small><a href="mailto:km@mail.kidommoc.com">Send Mail to Me!</a></small></p>
+			<p><small>Designed by km</small></p>
+		</footer>
+	</main>
+</body>
+
+</html>

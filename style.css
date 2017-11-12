@@ -1,0 +1,97 @@
+/* fonts */
+@import url("fonts.css");
+
+/* global */
+body {
+	font-size: 110%;
+	margin: 0rem;
+	font-family: "Cormorant";
+	line-height: 1.125;
+}
+
+/* list */
+main {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+	max-width: 42rem;
+}
+
+p {
+	font-size:1.125em;
+	color: #444444;
+}
+
+p.info {
+	margin-bottom: 2rem;
+	color: #AAAAAA;
+}
+
+small {
+	color:#AAAAAA;
+}
+
+h1, h2, h3 {
+	line-height: 1;
+	color: #333333;
+}
+
+h1 {
+	margin-bottom: -1rem;
+	font-size: 2.5rem;
+}
+
+h2 {
+	margin-bottom: -0.5rem;
+	font-size: 2rem;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:focus {
+	text-decoration: underline;
+}
+
+/* footer */
+footer {
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 2rem;
+	text-align: center;
+}
+
+footer p {
+	margin-bottom: -1rem;
+}
+
+/* hr */
+hr {
+	margin-left: auto;
+	margin-right: auto;
+	height: 1px;
+	border: none;
+	border-top: 1px solid #CCCCCC;
+}
+
+/* pagebar button */
+button.pagebar {
+	font-size: inherit;
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: inherit;
+}
+
+/* management */
+
+div.buttons-container {
+	display: inline-block;
+}
+
+img.manage-button {
+	margin: 0.25rem;
+}
