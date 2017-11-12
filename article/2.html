@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Essential HTML</title>
+	<link rel="stylesheet" href="../style.css" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<main>
+		<h1>Essential HTML</h1>
+		<p><small>km, Nov 12, 2017</small></p>
+		<article>
+				<p>HTML is a mark-up language. The <strong>content</strong> of web sites is stored in HTML. It consists of <em>elements</em> representing the content.</p>
+			<h2>Element</h2>
+			<p>An element may look like this:</p>
+			<pre class="block"><code>&lt;a href="http://kidommoc.com"&gt;km's home page&lt;/a&gt;
+|&lt;--------start tag---------&gt;|&lt;--content--&gt;|&lt;--end tag--&gt;|</code></pre>
+			<p>As shown above, an element is made up by <em>start tag</em>, <em>content</em> and <em>end tag</em>. <em>Tags</em> are surrounded by angle brackets, and end tag has a slash following the former one. That between paired angle brackets is the <em>name</em> of the element.</p>
+			<p>Some elements have no content so the end tag can be omitted. If so, the start tag has a slash and a optional space before its latter angle bracket:</p>
+			<pre class="block"><code>&lt;br /&gt;</code></pre>
+			<p>Elements can also have <em>attributes</em>. In the above example, element <code>a</code> has an attribute called <code>href</code>, and its value is <code>"http://kidommoc.com"</code>. Note that the double quotations are a part of the value cause some values are absolutely number like <code>1</code>. Universal attributes encompass <code>id</code>, <code>class</code> and <code>style</code>, used to indicating the id (must be unique) and the class, and the inline style sheet of this element.</p>
+			<p>Elements can be classified into <em>block elements</em>, <em>inline elements</em> and <em>invisible elements</em>. Block elements means a individual block and can exist alone, whereas inline elements must be in a block. Some elements must be unique in an HTML file.</p>
+			<h2>Conventional Format</h2>
+			<p>An HTML usually obeys the format as follows:</p>
+			<pre class="block"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;title&gt; ... &lt;/title&gt;
+    ...
+&lt;/head&gt;
+
+&lt;body&gt;
+    ...
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+			<p><code>&lt;html&gt;</code> is a unique block element as the root element, says, containing all other elements. Browsers will only handle those inside <code>&lt;html&gt;</code> element. Sometimes it takes <code>lang</code> attribute, which determines the language of the page.</p>
+			<p><code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> are both unique. Conventionally they contain those will only be aware of the browser and those will be shown to the users respectively. It's ok to put a <code>&lt;p&gt;</code> element in <code>&lt;header&gt;</code>, where it will work well, but doing so is not recommended.</p>
+			<p><code>&lt;meta&gt;</code> takes the <em>meta data</em> of the page through attributes, usually only the <em>charset</em> with the value <em>utf-8</em>.</p>
+			<p><code>&lt;title&gt;</code> determines what will be shown at the window and tab bar.</p>
+			<p>There is also an element named <code>&lt;link&gt;</code>, which is usually used to link something, most of time style sheet, through <code>href</code> attribute.</p>
+			<h2>Block elements</h2>
+			<ul>
+				<li><code>&lt;p&gt;</code><br />A paragraph. Any rebundant space, tab or line break will be omitted.</li>
+				<li><code>&lt;hx&gt;</code><br />A title. `x` is a integer between `1` to `6` indicating the level.</li>
+				<li><code>&lt;div&gt;</code><br />A universal container.</li>
+				<li><code>&lt;header&gt;</code> (unique)</li>
+				<li><code>&lt;footer&gt;</code> (unique)</li>
+				<li><code>&lt;main&gt;</code> (unique)</li>
+				<li><code>&lt;aside&gt;</code> (unique)</li>
+				<li><code>&lt;article&gt;</code></li>
+				<li><code>&lt;section&gt;</code></li>
+				<li><code>&lt;ul&gt;, &lt;ol&gt;</code><br />Unordered and ordered list. The entries are <code>&lt;li&gt;</code>.</li>
+				<li><code>&lt;hr&gt;</code><br />Makes a line.</li>
+				<li><code>&lt;img&gt;</code><br />Inserts an image. Always takes a <code>src</code> attribute which indicating the URL of the image.</li>
+			</ul>
+			<h2>Inline elements</h2>
+			<ul>
+				<li><code>&lt;a&gt;</code><br />Hyperlink. Use <code>href</code> attribute to determined where to link.</li>
+				<li><code>&lt;strong&gt;</code><br />Presents <em>importance</em>.</li>
+				<li><code>&lt;em&gt;</code><br />Presents <em>the point</em>.</li>
+				<li><code>&lt;cite&gt;</code><br />Quote name.</li>
+				<li><code>&lt;small&gt;</code><br />Side comment like author, copyright, etc.</li>
+				<li><code>&lt;code&gt;</code></li>
+				<li><code>&lt;span&gt;</code><br />Universal text container.</li>
+				<li><code>&lt;br&gt;</code><br />Line break. Always an empty element.</li>
+			</ul>
+			<h2>Script</h2>
+			<p>There is another special element called <code>&lt;script&gt;</code>, which is used to insert Javascript or other scripts into pages.</p>
+			<p>It always takes a <code>type</code> attribute in MIME format indicating the type of script. For instance, <code>&lt;script type="text/javascript"&gt;</code>.</p>
+			<p>Note that the end tag <strong>cannot</strong> be omitted.</p>
+			<p>Scripts can be embedded between <code>&lt;script&gt;</code> tags directly, or be referred from somewhere else through <code>src</code> attribute.</p>
+			<h2>Comment</h2>
+			<p>Comment in HTML is surrounded between <code>&lt;!--</code> and <code>--&gt;</code>.</p>
+			<h2>Escape</h2>
+			<p>Like other programming language (though HTML is not actually a programming language), HTML has <em>escape</em> also to present some characters which cannot be input directly. For more infomation, please <a href="http://www.elizabethcastro.com/html/extras/entities.html">looks at here</a>.</p>
+			<h2>One more thing</h2>
+			<p>HTML only takes <em>content but not appearance</em>. The latter is the responsibility of CSS. That's important.</p>
+		</article>
+		<hr />
+		<footer>
+			<p><small><a href="../index.html">Home</a> | <a href="http://github/kidommoc/">Github</a></small></p>
+			<p><small><a href="mailto:km@mail.kidommoc.com">Send Mail to Me!</a></small></p>
+			<p><small>Designed by km</small></p>
+		</footer>
+	</main>
+</body>
+
+</html>
