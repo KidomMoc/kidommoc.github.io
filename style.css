@@ -3,7 +3,7 @@
 
 /* global */
 body {
-	font-size: 110%;
+	font-size: 100%;
 	margin: 0rem;
 	font-family: "Cormorant";
 	line-height: 1.125;
@@ -19,7 +19,7 @@ main {
 }
 
 p {
-	font-size:1.125em;
+	font-size:1.25rem;
 	color: #444444;
 }
 
@@ -75,23 +75,4 @@ hr {
 	height: 1px;
 	border: none;
 	border-top: 1px solid #CCCCCC;
-}
-
-/* pagebar button */
-button.pagebar {
-	font-size: inherit;
-	background: none;
-	border: none;
-	cursor: pointer;
-	color: inherit;
-}
-
-/* management */
-
-div.buttons-container {
-	display: inline-block;
-}
-
-img.manage-button {
-	margin: 0.25rem;
 }
