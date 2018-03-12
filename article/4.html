@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>A Lesson About Line Break</title>
+	<link rel="stylesheet" href="../style.css" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<main>
+		<h1>A Lesson About Line Break</h1>
+		<p><small>km, Dec 12, 2017</small></p>
+		<article>
+				<p>I've spent a whole day on a strange bug. It seemed that when it came to a <code>\n</code> in a certain document, <code>putc</code> would failed. That's so strange and at last I changed the doc and found the cause in <code>gdb</code>.</p>
+			<p>The reason is, that doc is from Windows Notepad and its line breaks are `\r\n`. I've worked on GNU/Linux for such a long time that ignoring it. Here I writed down this lesson to prevent a next mistake.</p>
+			<p><strong>ALWAYS REMENBER WHERE THE DOCUMENT FROM</strong></p>
+		</article>
+		<hr />
+		<footer>
+			<p><small><a href="../index.html">Home</a> | <a href="http://github/kidommoc/">Github</a></small></p>
+			<p><small><a href="mailto:km@mail.kidommoc.com">Send Mail to Me!</a></small></p>
+			<p><small>Designed by km</small></p>
+		</footer>
+	</main>
+</body>
+
+</html>
